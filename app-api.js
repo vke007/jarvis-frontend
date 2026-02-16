@@ -3,7 +3,7 @@
 
 class JarvisAssistantAPI {
     constructor() {
-        this.API_URL = 'http://localhost:5000/api';
+        this.API_URL = "https://jarvis-backend-production-5b50.up.railway.app/api";
         this.activeModule = 'dashboard';
         this.isListening = false;
         this.recognition = null;
