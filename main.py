@@ -823,3 +823,10 @@ if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8080))
     print(f"🚀  Listening on :{port}")
     app.run(host="0.0.0.0", port=port, debug=False)
+  # Add this at the bottom of main.py
+if __name__ == "__main__":
+    with app.app_context():
+        db.create_all()  # This ensures your tables exist
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
+  
