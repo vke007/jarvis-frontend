@@ -803,6 +803,10 @@ def ping():
 def root():
     return jsonify({"msg": "JARVIS API v3"})
 
+  @app.get("/api/ping")
+def ping():
+    return jsonify({"status": "online"})
+
 
 # ══════════════════════════════════════════════
 #  BOOT
@@ -822,7 +826,5 @@ if __name__ == "__main__":
         db.create_all()  # This ensures your tables exist
     port = int(os.environ.get("PORT", 8080))
     app.run(host="0.0.0.0", port=port)
-  @app.get("/api/ping")
-def ping():
-    return jsonify({"status": "online"})
+
   
