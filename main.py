@@ -803,10 +803,6 @@ def ping():
 def root():
     return jsonify({"msg": "JARVIS API v3"})
 
-  @app.get("/api/ping")
-def ping():
-    return jsonify({"status": "online"})
-
 
 # ══════════════════════════════════════════════
 #  BOOT
