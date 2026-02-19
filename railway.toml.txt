@@ -2,9 +2,9 @@
 builder = "nixpacks"
 
 [deploy]
-startCommand = "python main.py"
-healthcheckPath = "/api/ping"
-healthcheckTimeout = 30
+# Remove startCommand here so Railway uses your Procfile
+healthcheckPath = "/api/auth/verify" 
+healthcheckTimeout = 100
 
 [environment]
 PYTHON_VERSION = "3.12.10"
