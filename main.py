@@ -817,13 +817,6 @@ def init_db():
         db.session.commit()
     print("✅  DB ready — JARVIS v3 (Python 3.12.10)")
 
-
-if __name__ == "__main__":
-    init_db()
-    port = int(os.environ.get("PORT", 8080))
-    print(f"🚀  Listening on :{port}")
-    app.run(host="0.0.0.0", port=port, debug=False)
-  # Add this at the bottom of main.py
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()  # This ensures your tables exist
