@@ -1381,7 +1381,7 @@ body::after {
 ════════════════════════════════════════ -->
 <script>
 // Config
-let API = localStorage.getItem('jarvis_api') || 'http://jarvis-private-production-e8ac.up.railway.app/api';
+let API = localStorage.getItem('jarvis_api') || 'https://vke007.github.io/jarvis-private/';
 let TOKEN = localStorage.getItem('jarvis_token') || '';
 let ME = {};
 
@@ -1825,7 +1825,6 @@ async function processVoiceCommand(cmd) {
 
 function speak(text) {
   if (!window.speechSynthesis) return;
-  
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.rate = 1.0;
   utterance.pitch = 1.0;
