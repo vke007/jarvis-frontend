@@ -657,7 +657,7 @@ def save_theme():
 #  AI CHAT
 # ══════════════════════════════════════════════
 
-"""
+("""
 JARVIS AI Assistant — Complete Working Backend
 Python: 3.12.10 | File: main.py
 Owner: sethuvigneshc@gmail.com
@@ -670,7 +670,7 @@ def chat():
     user_msg = data.get("message", "")
     
     if not user_msg:
-        return jsonify({"error": "No message provided"}), 400
+        return jsonify({"error": "No message provided"}), 400)
 
 
 ALL FEATURES WORKING:
