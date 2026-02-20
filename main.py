@@ -672,20 +672,6 @@ def chat():
     if not user_msg:
         return jsonify({"error": "No message provided"}), 400
 
-    # Logic for your AI (Claude/Anthropic/Gemini) goes here
-    # For now, a placeholder response:
-    response_text = f"JARVIS processed your request: {user_msg}"
-    
-    # Save to database
-    chat_entry = ChatHistory(
-        owner=request.email, 
-        message=user_msg, 
-        response=response_text
-    )
-    db.session.add(chat_entry)
-    db.session.commit()
-    
-    return jsonify({"response": response_text})
 
 ALL FEATURES WORKING:
 - Tasks, Calendar, Health, Notes ✓
