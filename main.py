@@ -658,17 +658,6 @@ def save_theme():
 # ═════════════════════════════════════════════
 
 
-ALL FEATURES WORKING:
-- Tasks, Calendar, Health, Notes ✓
-- AI Chat with web search ✓
-- Code generation ✓
-- Safety controls ✓
-- Theme customization ✓
-- Website monitoring & daily reports ✓
-- Guest management ✓
-- Forgot password ✓
-"""
-
 from __future__ import annotations
 import os, json, secrets, smtplib, re
 from datetime import datetime, timedelta, date
